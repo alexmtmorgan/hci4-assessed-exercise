@@ -1,0 +1,18 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+# WebStorm (jetbrains) project files
+.idea
+
+# generated platforms and plugins.. the pre-add-platform hook will install all plugins as needed
+platforms
+plugins
+
+# ignore bower added libraries...
+www/lib
+node_modules
+engine
+
+# temporary files
+*~
+
