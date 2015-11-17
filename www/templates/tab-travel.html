@@ -1,31 +1,54 @@
-<ion-view view-title="Glas-Go!">
-  <ion-content class="padding vcenter">
+<ion-view view-title="Travel" hide-nav-bar="false">
+  <ion-content scroll="true" class="center">
     <div class="row">
-      <div class="col hcenter">
-        <button class="button button-large icon ion-clock button-positive round"></button>
-      </div>
-      <div class="col hcenter">
-        <button class="button button-large icon ion-leaf button-balanced round"></button>
-      </div>
-      <div class="col hcenter">
-        <button class="button button-large icon ion-android-walk button-dark round"></button>
-      </div>
-    </div>
-    <br>
-    <div>
-      <div class="list">
-        <div class="item item-input-inset">
-          <label class="item-input-wrapper">
-            <input type="text" placeholder="Location">
-          </label>
-          <button class="button button-icon icon ion-navigate button-small"></button>
+      <div class="col">
+        <div class="text-center">
+          <h1>Glas-Go!</h1>
         </div>
-        <div class="item item-input-inset">
-          <label class="item-input-wrapper">
-            <input type="text" placeholder="Destination">
-          </label>
-          <button class="button button-icon icon ion-ios-location button-small"></button>
+        <div id="logo-wrapper" class="text-center padding">
+          <img class="logo full-image padding-top" src="../img/nextbike_logo.png">
         </div>
+
+        <div class="text-center padding">
+          <button id="time" class="button button-large icon ion-clock button-positive round"
+                  ng-click="toggle('time')"
+                  ng-class="selectedButton.time ? 'toggle-on' : 'toggle-off'"></button>
+          <button id="environment" class="button button-large icon ion-leaf button-balanced round"
+                  ng-click="toggle('environment')"
+                  ng-class="selectedButton.environment ? 'toggle-on' : 'toggle-off'"></button>
+          <button id="exercise" class="button button-large icon ion-android-walk button-stable round"
+                  ng-click="toggle('exercise')"
+                  ng-class="selectedButton.exercise ? 'toggle-on' : 'toggle-off'"></button>
+        </div>
+
+        <div>
+          <span class="alignleft">Preferred: </span>
+            <span class="time" ng-show="travelMode === 'Time'">{{travelMode}}</span>
+            <span class="environment" ng-show="travelMode === 'Environment'">{{travelMode}}</span>
+            <span class="exercise" ng-show="travelMode === 'Exercise'">{{travelMode}}</span>
+          <span class="alignLeft"><br></span>
+
+        </div>
+
+        <div id="form">
+          <form name="travelform" ng-submit="travel(travel)">
+            <div class="list">
+              <label class="item item-input">
+                <span class="input-label">Location</span>
+                <input required type="text" name="location" ng-model="travel.location">
+              </label>
+              <label class="item item-input">
+                <span class="input-label">Destination</span>
+                <input required type="text" name="destination" ng-model="travel.destination">
+              </label>
+            </div>
+            <div class="button-bar">
+              <button class="button button-large button-positive" type="submit"
+                      ng-disabled="travelform.$invalid" nav-direction="forward">Travel</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
   </ion-content>

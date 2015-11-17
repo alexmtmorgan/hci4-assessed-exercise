@@ -3,8 +3,5 @@
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower"
-  },
-  "resolutions": {
-    "angular": "~1.4.7"
   }
 }

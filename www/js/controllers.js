@@ -1,28 +1,62 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+  .controller('TravelCtrl', function($scope) {
+    // With the new view caching in Ionic, Controllers are only called
+    // when they are recreated or on app start, instead of every page change.
+    // To listen for when this page is active (for example, to refresh data),
+    // listen for the $ionicView.enter event:
+    //
+    //$scope.$on('$ionicView.enter', function(e) {
+    //});
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+    $scope.selectedButton = {
+      time: false,
+      environment: true,
+      exercise: false
+    };
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
+    $scope.travelMode = 'Environment';
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+    $scope.toggle = function(id) {
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
+      for(var key in $scope.selectedButton) {
+        if($scope.selectedButton.hasOwnProperty(key)) {
+          $scope.selectedButton[key] = false;
+        }
+      }
+
+      if(id === 'time') {
+        $scope.selectedButton.time = !$scope.selectedButton.time;
+
+        $scope.travelMode = 'Time';
+
+      } else if(id === 'environment') {
+        $scope.selectedButton.environment = !$scope.selectedButton.environment;
+
+        $scope.travelMode = 'Environment'
+
+      } else if(id === 'exercise') {
+        $scope.selectedButton.exercise = !$scope.selectedButton.exercise;
+
+        $scope.travelMode = 'Exercise';
+
+      } else {
+        console.log('invalid choice');
+      }
+    }
+
+  })
+
+  .controller('SettingsCtrl', function($scope) {
+    // With the new view caching in Ionic, Controllers are only called
+    // when they are recreated or on app start, instead of every page change.
+    // To listen for when this page is active (for example, to refresh data),
+    // listen for the $ionicView.enter event:
+    //
+    //$scope.$on('$ionicView.enter', function(e) {
+    //});
+
+    $scope.settings = {
+      enableFriends: true
+    };
+  });
