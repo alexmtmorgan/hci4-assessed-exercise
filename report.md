@@ -2,6 +2,8 @@
 
 See [here](http://moodle2.gla.ac.uk/pluginfile.php/658002/mod_resource/content/0/HCI4%20assessed%20exercise%202015.pdf) for the specification document.
 
+>Your report should be a maximum of 10 pages. It should include information about your design process, the stages of implementation you went through and the evaluations you did of the implementation. You should also reflect on the system you designed and show how it might be improved in the future.
+
 ## Design (30%)
 
 >Start the process by coming up with an idea and then building paper prototypes of it. You can quickly evaluate these prototypes using things like Heuristic evaluation and Think Aloud. Try and test with people who are in your target user group, rather than just classmates. I will put up the notes from last year on Moodle so that you can get a reminder of some of the techniques you might use.    
