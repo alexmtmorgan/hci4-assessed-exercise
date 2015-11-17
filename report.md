@@ -1,4 +1,8 @@
-# Report (overall this is worth 15%)
+# HCI4 Assessed Exercise 2015 - Enabling and Encouraging Better Use of Transport
+
+>With increasing numbers of vehicles on the road, congestion is an increasing problem. Trying to reduce the consumption of fossil fuels and car emissions are important issues. **Your job is to come up with an application or system that will improve the use of transport.** This might be public transport like buses or trains, private transport like cars or lorries, or human powered transport such as walking or cycling. Your ideas should *help people use transport better and more efficiently*. This could be to manage traffic flows,*support the use of different types of vehicles in new ways*, or *help people choose appropriate forms of transport*. We want you to come up with something interesting and new, not just recreate Google Maps
+
+## Report (this document overall, it is worth 15%)
 
 See [here](http://moodle2.gla.ac.uk/pluginfile.php/658002/mod_resource/content/0/HCI4%20assessed%20exercise%202015.pdf) for the specification document.
 
@@ -10,13 +14,27 @@ See [here](http://moodle2.gla.ac.uk/pluginfile.php/658002/mod_resource/content/0
 If your prototype doesn’t work then start again, that is the beauty of paper! Keep these versions though so you can include them in your report. It is good to see the process of design you went through.    
 When you have a good paper design you can start to implement it.
 
-We want the thing to do the things
+Our design came from a simple idea: making it easier to plan journeys in Glasgow. NextBike, Glasgow's [Mass Automated Cycle Hire](https://www.glasgow.gov.uk/index.aspx?articleid=13315) scheme which launched last June, has been a huge success. Glasgow's "Clockwork Orange" subway, the third oldest subway in the world, is still going strong. We wanted to make use of Glasgow specific modes of transport. Incorporating bus/other rail travel would be outwith the current scope of the project, as they would require significant work to ensure they run correctly. There are also already apps for those regularly scheduled things.
+
+The subway arrives very, very regularly; whilst the number of bikes at any particular location changes. We therefore elected to focus on interfacing with the NextBike API.
+
+We should mention something about location specifics, such as Subway stations not moving and NextBike stations continually expanding. Maybe mention how many have already been added since starting? The logo also reflects the combination.
+
+We also wanted a minimalist interface. This influenced what we put on each page/screen/whatever.
+
+We came up with a load of ideas on paper first. We will include pictures of all of them here.
+
+Very early on in the design process we decided that the app should be built primarily for mobile use, but it should also be able to be accessed via the web.
 
 ## Implementation (20%)
 
 >Use any language/OS/platform you like, although it might be a good idea to use something you are familiar with due to the short time available. We can provide some phones, vibration motors, etc. Please ask to see if we have something that you might need. Don’t spend all of your time implementing; this won’t get you the best marks. You need to show your design and evaluation too. 
 
-We made the thing do the things.
+Cordova takes a web app and makes it do specific things on various devices. It allows the application to access native APIs in a platform specific way. 
+
+Ionic was used to design the look and feel of the application. It provides StyleSheets and some JavaScript functionality.
+
+Angular.js makes the things do the things. It's supa-important.
 
 ## Evaluation (25%)
 
@@ -29,3 +47,7 @@ We got people to say how well the thing does things.
 >You will demo your prototype to one of the lecturers in the lecture slots in the last week of term. You will have a fixed 5 minute slot to show off the system you have developed and what it can do.
 
 This will be done on Tuesday 2nd December.
+
+---
+
+Alexander Morgan and David Creigh
