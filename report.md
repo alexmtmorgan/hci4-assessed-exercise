@@ -4,8 +4,8 @@ See [here](http://moodle2.gla.ac.uk/pluginfile.php/658002/mod_resource/content/0
 
 ## Design (30%)
 
->Start the process by coming up with an idea and then building paper prototypes of it. You can quickly evaluate these prototypes using things like Heuristic evaluation and Think Aloud. Try and test with people who are in your target user group, rather than just classmates. I will put up the notes from last year on Moodle so that you can get a reminder of some of the techniques you might use. 
-If your prototype doesn’t work then start again, that is the beauty of paper! Keep these versions though so you can include them in your report. It is good to see the process of design you went through. 
+>Start the process by coming up with an idea and then building paper prototypes of it. You can quickly evaluate these prototypes using things like Heuristic evaluation and Think Aloud. Try and test with people who are in your target user group, rather than just classmates. I will put up the notes from last year on Moodle so that you can get a reminder of some of the techniques you might use.    
+If your prototype doesn’t work then start again, that is the beauty of paper! Keep these versions though so you can include them in your report. It is good to see the process of design you went through.    
 When you have a good paper design you can start to implement it.
 
 We want the thing to do the things
