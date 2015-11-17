@@ -30,23 +30,35 @@ Very early on in the design process we decided that the app should be built prim
 
 >Use any language/OS/platform you like, although it might be a good idea to use something you are familiar with due to the short time available. We can provide some phones, vibration motors, etc. Please ask to see if we have something that you might need. Don’t spend all of your time implementing; this won’t get you the best marks. You need to show your design and evaluation too. 
 
-Cordova takes a web app and makes it do specific things on various devices. It allows the application to access native APIs in a platform specific way. 
+[Cordova](https://cordova.apache.org/) takes a web app and allows platform specific API access to enhance the experience.
 
-Ionic was used to design the look and feel of the application. It provides StyleSheets and some JavaScript functionality.
+The [Ionic](http://ionicframework.com/) framework was used to unify the look and feel of the application. It consists of mobile optimised HTML5, StyleSheets along with some JavaScript functionality.
 
-Angular.js makes the things do the things. It's supa-important.
+[Angular.js](https://angularjs.org/) makes the things do the things. It's supa-important.
+
+We can include pictures of the interface here. Maybe a flowchart as well?
 
 ## Evaluation (25%)
 
 >We want you to evaluate the prototype you implemented to show that it works, and refine it if necessary to make it even better. Evaluation should occur with real end users if you can manage it. These evaluations should be more controlled than those you used for the design part, perhaps using the experimental evaluation techniques we talked about in the lectures. We want you to use a broad range of evaluation techniques and show them in your report, so don’t just use the same techniques as in the earlier part.
 
-We got people to say how well the thing does things.
+We need to ensure we get a few people using paper prototype design, getting feedback. Also would be really great if we could get them testing out the real thing, so we need to keep the timeframe in mind w.r.t. the last day or so.
 
 ## Demo (10%)
 
 >You will demo your prototype to one of the lecturers in the lecture slots in the last week of term. You will have a fixed 5 minute slot to show off the system you have developed and what it can do.
 
 This will be done on Tuesday 2nd December.
+
+We'll want to show off:
+
+* Initial interface - web and mobile
+* Logical flow
+* At least two out of the three priorities (time, environment, exercise) - we'll probably have time for all three.
+* Show sorting/prioritising the "generated" routes based on metrics
+* Location acquisition - current, etc.
+* Bike availability at stations
+* etc.
 
 ---
 
