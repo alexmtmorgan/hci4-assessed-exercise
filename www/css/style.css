@@ -18,7 +18,7 @@
 }
 
 .logo {
-  width: 45%;
+  width: 90%;
 }
 
 .center {
@@ -60,23 +60,51 @@
   transform: translateY(50%);
 }
 
-.time, .environment, .exercise {
+.prefer {
   font-weight: bold;
   float: left;
   width:33.33333%;
   text-align:center;
 }
 
-.time {
+.Time, .Environment, .Exercise, .exercise-white{
+  font-weight: bold;
+}
+
+.Time {
   color: #387ef5;
 }
 
-.environment {
+.Environment {
   color: #33cd5f;
 }
 
-.exercise {
+.Exercise {
   color: black;
+}
+
+.exercise-white {
+  color: white;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.white {
+  color: white;
+}
+
+.list-divider-time {
+  background-color: #387ef5;
+}
+
+.list-divider-environment {
+  background-color: #33cd5f;
+}
+
+.list-divider-exercise {
+  background-color: black;
 }
 
 .alignleft {

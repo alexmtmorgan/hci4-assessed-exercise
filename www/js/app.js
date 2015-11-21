@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('glas-go', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('glasgo', ['ionic', 'glasgo.controllers', 'glasgo.services'])
 
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -46,6 +46,16 @@ angular.module('glas-go', ['ionic', 'starter.controllers', 'starter.services'])
           'tab-travel': {
             templateUrl: 'templates/tab-travel.html',
             controller: 'TravelCtrl'
+          }
+        }
+      })
+
+      .state('tab.travellist', {
+        url: '/travel-list',
+        views: {
+          'tab-travel': {
+            templateUrl: 'templates/tab-travel-list.html',
+            controller: 'TravelListCtrl'
           }
         }
       })

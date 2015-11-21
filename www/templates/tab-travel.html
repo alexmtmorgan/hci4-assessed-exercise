@@ -1,12 +1,9 @@
-<ion-view view-title="Travel" hide-nav-bar="false">
+<ion-view view-title="Input" hide-nav-bar="false">
   <ion-content scroll="true" class="center">
     <div class="row">
       <div class="col">
-        <div class="text-center">
-          <h1>Glas-Go!</h1>
-        </div>
         <div id="logo-wrapper" class="text-center padding">
-          <img class="logo full-image padding-top" src="../img/nextbike_logo.png">
+          <img class="logo full-image" src="../img/logo.png">
         </div>
 
         <div class="text-center padding">
@@ -22,16 +19,16 @@
         </div>
 
         <div>
-          <span class="alignleft">Preferred: </span>
-            <span class="time" ng-show="travelMode === 'Time'">{{travelMode}}</span>
-            <span class="environment" ng-show="travelMode === 'Environment'">{{travelMode}}</span>
-            <span class="exercise" ng-show="travelMode === 'Exercise'">{{travelMode}}</span>
-          <span class="alignLeft"><br></span>
+          <span class="alignleft"><br></span>
+          <span class="Time prefer" ng-show="travelMode === 'Time'">{{travelMode}}</span>
+          <span class="Environment prefer" ng-show="travelMode === 'Environment'">{{travelMode}}</span>
+          <span class="Exercise prefer" ng-show="travelMode === 'Exercise'">{{travelMode}}</span>
+          <span class="alignLeft"><br><br></span>
 
         </div>
 
         <div id="form">
-          <form name="travelform" ng-submit="travel(travel)">
+          <form name="travelform" ng-submit="travel(travelform)">
             <div class="list">
               <label class="item item-input">
                 <span class="input-label">Location</span>
@@ -44,7 +41,7 @@
             </div>
             <div class="button-bar">
               <button class="button button-large button-positive" type="submit"
-                      ng-disabled="travelform.$invalid" nav-direction="forward">Travel</button>
+                      ng-disabled="travelform.$invalid" nav-direction="forward">See Travel Suggestions</button>
             </div>
           </form>
         </div>
