@@ -32,9 +32,9 @@ Very early on in the design process we decided that the app should be built prim
 
 [Cordova](https://cordova.apache.org/) takes a web app and allows platform specific API access to enhance the experience.
 
-The [Ionic](http://ionicframework.com/) framework was used to unify the look and feel of the application. It consists of mobile optimised HTML5, StyleSheets along with some JavaScript functionality.
+The [Ionic](http://ionicframework.com/) framework was used to unify the look and feel of the application. It consists of mobile optimised HTML5, StyleSheets and some JavaScript functionality.
 
-[Angular.js](https://angularjs.org/) makes the things do the things. It's supa-important.
+[Angular.js](https://angularjs.org/) provides the ability to dynamically change aspects of the application even after the pages have loaded.
 
 We can include pictures of the interface here. Maybe a flowchart as well?
 
