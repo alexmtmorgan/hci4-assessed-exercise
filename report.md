@@ -44,6 +44,57 @@ We can include pictures of the interface here. Maybe a flowchart as well?
 
 We need to ensure we get a few people using paper prototype design, getting feedback. Also would be really great if we could get them testing out the real thing, so we need to keep the timeframe in mind w.r.t. the last day or so.
 
+#### Paper prototype
+
+**C:** 
+* [clicked on button before destination selected.]
+* We need more development of paper prototype.
+* Total carbon emissions for method of transport instead of carbon emissions saved.
+* Icons for mode of transport.
+* How to choose?
+* Presenting different info depending on selection
+
+**J:**
+* Immediate worry that destination/location boxes were login/password boxes
+* Icons:
+    * Alarm timer
+    * Stops, walking, distance travelled
+    * Distance travelled
+* Click on one *before* destination/location [I'm not sure why I emphasised this bit]
+* We should make sure that we emphasis switching between buttons @ the top of the page
+* Number journeys so ranking is more explicit. -> "Fastest journeys"
+* Settings might include units (e.g. miles/kilometers); colour themes (in particular a dark theme)
+* Back button navigation consistency (which we already have, but it was emphasised)
+* Routes in list could expand to give more information (this could include route info instead of directly opening maps or extra metrics)
+* Icons
+* Weather might be a distraction. Alerts? [Could build this in to walking/cycling routes, like a warning symbol or something]
+
+**R:**
+* Tried buttons - top-down!!!
+* Entered
+	* Thought exercise was walk
+	* Not sure what icons at top are
+	* Didn't notice bold when change route type
+* Tapped friends
+	* How see own profile, maybe at top of friends tab?
+	* How to add friends?
+	* Sort friends based on steps, local, etc.
+	* Privacy?
+	* Average metrics/day rather than overall
+	* Interested to see own "badges" for personal achievements
+	* E.T.A instead of time taken?
+
+#### Implemented evaluation
+
+**TT:**
+
+* What do buttons mean?
+* Consume versus burn calories/distance
+* Having routes in different order - what's the point? Isn't it redundant?
+	* [We explained]
+* Colour, he liked.
+	* There's a better sense that tabs/buttons have been changed.
+
 ## Demo (10%)
 
 >You will demo your prototype to one of the lecturers in the lecture slots in the last week of term. You will have a fixed 5 minute slot to show off the system you have developed and what it can do.
