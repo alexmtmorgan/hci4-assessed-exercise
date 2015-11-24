@@ -51,7 +51,32 @@ angular.module('glasgo.controllers', [])
       Shared.setStart(travelForm.location.$viewValue);
       Shared.setEnd(travelForm.destination.$viewValue);
 
+      Shared.setCurrentLocation($scope.currentLocation);
+
       $state.go('tab.travellist');
+    };
+
+    $scope.travels = {
+      location: null,
+      destination: null
+    };
+
+    $scope.currentLocation = {
+      latitude: null,
+      longitude: null
+    };
+
+    $scope.addLocation = function() {
+      navigator.geolocation.getCurrentPosition(
+        function(position) {
+          $scope.travels.location = "University of Glasgow";
+          $scope.currentLocation.latitude = position.coords.latitude;
+          $scope.currentLocation.longitude = position.coords.longitude;
+        },
+        function() {
+          alert('Error getting location');
+        });
+      return false;
     };
 
   })
@@ -60,12 +85,40 @@ angular.module('glasgo.controllers', [])
 
     $scope.travelModes = ['Time','Environment', 'Exercise'];
 
+    $scope.selectedButton = {
+      time: false,
+      environment: true,
+      exercise: false
+    };
+
     $scope.$on('$ionicView.enter', function(e) {
 
       $scope.travelMode = Shared.getPreferredTravelMode();
+      switch($scope.travelMode) {
+        case 'Time':
+          $scope.selectedButton.time = true;
+          $scope.selectedButton.environment = false;
+          $scope.selectedButton.exercise = false;
+          break;
+        case 'Environment':
+          $scope.selectedButton.time = false;
+          $scope.selectedButton.environment = true;
+          $scope.selectedButton.exercise = false;
+          break;
+        case 'Exercise':
+          $scope.selectedButton.time = false;
+          $scope.selectedButton.environment = false;
+          $scope.selectedButton.exercise = true;
+          break;
+        default:
+          console.log('Invalid');
+          break;
+      }
 
       $scope.startLocation = Shared.getStart();
       $scope.endLocation = Shared.getEnd();
+
+      $scope.currentLocation = Shared.getCurrentLocation();
 
       $scope.initial();
     });
@@ -81,6 +134,34 @@ angular.module('glasgo.controllers', [])
         type: null
       }
     ];
+
+    $scope.toggle = function(id) {
+
+      for(var key in $scope.selectedButton) {
+        if($scope.selectedButton.hasOwnProperty(key)) {
+          $scope.selectedButton[key] = false;
+        }
+      }
+
+      if(id === 'time') {
+        $scope.selectedButton.time = !$scope.selectedButton.time;
+
+        $scope.travelMode = 'Time';
+
+      } else if(id === 'environment') {
+        $scope.selectedButton.environment = !$scope.selectedButton.environment;
+
+        $scope.travelMode = 'Environment';
+
+      } else if(id === 'exercise') {
+        $scope.selectedButton.exercise = !$scope.selectedButton.exercise;
+
+        $scope.travelMode = 'Exercise';
+
+      } else {
+        console.log('invalid choice');
+      }
+    };
 
     $scope.initial = function() {
       $scope.routes[0].type = $scope.travelMode;
@@ -100,8 +181,6 @@ angular.module('glasgo.controllers', [])
         console.log("Travel mode not selected");
       }
     };
-
-    $scope.initial();
   })
 
   .controller('SettingsCtrl', function($scope) {

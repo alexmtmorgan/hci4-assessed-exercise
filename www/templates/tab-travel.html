@@ -1,4 +1,4 @@
-<ion-view view-title="Input" hide-nav-bar="false">
+<ion-view view-title="Homescreen" hide-nav-bar="false">
   <ion-content scroll="true" class="center">
     <div class="row">
       <div class="col">
@@ -13,7 +13,7 @@
           <button id="environment" class="button button-large icon ion-leaf button-balanced round"
                   ng-click="toggle('environment')"
                   ng-class="selectedButton.environment ? 'toggle-on' : 'toggle-off'"></button>
-          <button id="exercise" class="button button-large icon ion-android-walk button-stable round"
+          <button id="exercise" class="button button-large icon ion-ios-body button-stable round"
                   ng-click="toggle('exercise')"
                   ng-class="selectedButton.exercise ? 'toggle-on' : 'toggle-off'"></button>
         </div>
@@ -30,13 +30,22 @@
         <div id="form">
           <form name="travelform" ng-submit="travel(travelform)">
             <div class="list">
-              <label class="item item-input">
-                <span class="input-label">Location</span>
-                <input required type="text" name="location" ng-model="travel.location">
-              </label>
+              <div class="row">
+                <div class="col col-90">
+                  <label class="item item-input">
+                    <span class="input-label">Location</span>
+                    <input required type="text" name="location" ng-model="travels.location">
+                  </label>
+                </div>
+                <div class="col col-10">
+                  <button class="button button-clear button-dark button-large icon ion-location"
+                          type="button"
+                          ng-click="addLocation(travels.location)"> </button>
+                </div>
+              </div>
               <label class="item item-input">
                 <span class="input-label">Destination</span>
-                <input required type="text" name="destination" ng-model="travel.destination">
+                <input required type="text" name="destination" ng-model="travels.destination">
               </label>
             </div>
             <div class="button-bar">
@@ -45,7 +54,6 @@
             </div>
           </form>
         </div>
-
       </div>
     </div>
   </ion-content>

@@ -10,6 +10,11 @@ angular.module('glasgo.services', ['ng'])
 
     var preferredTravelMode = "Environment";
 
+    var currentLocation = {
+      latitude: null,
+      longitude: null
+    };
+
     return {
       getStart: function() {
         return journey.start;
@@ -37,6 +42,13 @@ angular.module('glasgo.services', ['ng'])
       },
       setPrefferedTravelMode: function(mode) {
         preferredTravelMode = mode;
+      },
+
+      getCurrentLocation: function() {
+        return currentLocation;
+      },
+      setCurrentLocation: function(currentLoc) {
+        currentLocation = currentLoc;
       }
     }
   });

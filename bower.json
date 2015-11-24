@@ -2,6 +2,7 @@
   "name": "HelloIonic",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower"
+    "ionic": "driftyco/ionic-bower",
+    "platform.js": "platform#~1.3.0"
   }
 }
