@@ -167,8 +167,8 @@ angular.module('glasgo.controllers', [])
       $scope.routes[0].type = $scope.travelMode;
 
       if($scope.travelMode === 'Time') {
-        $scope.routes[1].type = 'Environment';
-        $scope.routes[2].type = 'Exercise';
+        $scope.routes[1].type = 'Exercise';
+        $scope.routes[2].type = 'Environment';
 
       } else if($scope.travelMode === 'Environment') {
         $scope.routes[1].type = 'Exercise';
