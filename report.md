@@ -32,9 +32,9 @@ Very early on in the design process we decided that the app should be built prim
 
 [Cordova](https://cordova.apache.org/) takes a web app and allows platform specific API access to enhance the experience.
 
-The [Ionic](http://ionicframework.com/) framework was used to unify the look and feel of the application. It consists of mobile optimised HTML5, StyleSheets along with some JavaScript functionality.
+The [Ionic](http://ionicframework.com/) framework was used to unify the look and feel of the application. It consists of mobile optimised HTML5, StyleSheets and some JavaScript functionality.
 
-[Angular.js](https://angularjs.org/) makes the things do the things. It's supa-important.
+[Angular.js](https://angularjs.org/) provides the ability to dynamically change aspects of the application even after the pages have loaded.
 
 We can include pictures of the interface here. Maybe a flowchart as well?
 
@@ -43,6 +43,57 @@ We can include pictures of the interface here. Maybe a flowchart as well?
 >We want you to evaluate the prototype you implemented to show that it works, and refine it if necessary to make it even better. Evaluation should occur with real end users if you can manage it. These evaluations should be more controlled than those you used for the design part, perhaps using the experimental evaluation techniques we talked about in the lectures. We want you to use a broad range of evaluation techniques and show them in your report, so don’t just use the same techniques as in the earlier part.
 
 We need to ensure we get a few people using paper prototype design, getting feedback. Also would be really great if we could get them testing out the real thing, so we need to keep the timeframe in mind w.r.t. the last day or so.
+
+#### Paper prototype
+
+**C:** 
+* [clicked on button before destination selected.]
+* We need more development of paper prototype.
+* Total carbon emissions for method of transport instead of carbon emissions saved.
+* Icons for mode of transport.
+* How to choose?
+* Presenting different info depending on selection
+
+**J:**
+* Immediate worry that destination/location boxes were login/password boxes
+* Icons:
+    * Alarm timer
+    * Stops, walking, distance travelled
+    * Distance travelled
+* Click on one *before* destination/location [I'm not sure why I emphasised this bit]
+* We should make sure that we emphasis switching between buttons @ the top of the page
+* Number journeys so ranking is more explicit. -> "Fastest journeys"
+* Settings might include units (e.g. miles/kilometers); colour themes (in particular a dark theme)
+* Back button navigation consistency (which we already have, but it was emphasised)
+* Routes in list could expand to give more information (this could include route info instead of directly opening maps or extra metrics)
+* Icons
+* Weather might be a distraction. Alerts? [Could build this in to walking/cycling routes, like a warning symbol or something]
+
+**R:**
+* Tried buttons - top-down!!!
+* Entered
+	* Thought exercise was walk
+	* Not sure what icons at top are
+	* Didn't notice bold when change route type
+* Tapped friends
+	* How see own profile, maybe at top of friends tab?
+	* How to add friends?
+	* Sort friends based on steps, local, etc.
+	* Privacy?
+	* Average metrics/day rather than overall
+	* Interested to see own "badges" for personal achievements
+	* E.T.A instead of time taken?
+
+#### Implemented evaluation
+
+**TT:**
+
+* What do buttons mean?
+* Consume versus burn calories/distance
+* Having routes in different order - what's the point? Isn't it redundant?
+	* [We explained]
+* Colour, he liked.
+	* There's a better sense that tabs/buttons have been changed.
 
 ## Demo (10%)
 
